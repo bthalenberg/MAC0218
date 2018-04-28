@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orcamento Orgao Apoios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Orgao apoio</th>
+      <th>Pessoal ativo</th>
+      <th>Pessoal inativo</th>
+      <th>Dotacao</th>
+      <th>Outros custeios investimentos dotacao basica adicionais</th>
+      <th>Outros custeios investimentos utilidade publica</th>
+      <th>Ano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orcamento_orgao_apoios.each do |orcamento_orgao_apoio| %>
+      <tr>
+        <td><%= orcamento_orgao_apoio.orgao_apoio %></td>
+        <td><%= orcamento_orgao_apoio.pessoal_ativo %></td>
+        <td><%= orcamento_orgao_apoio.pessoal_inativo %></td>
+        <td><%= orcamento_orgao_apoio.dotacao %></td>
+        <td><%= orcamento_orgao_apoio.outros_custeios_investimentos_dotacao_basica_adicionais %></td>
+        <td><%= orcamento_orgao_apoio.outros_custeios_investimentos_utilidade_publica %></td>
+        <td><%= orcamento_orgao_apoio.ano %></td>
+        <td><%= link_to 'Show', orcamento_orgao_apoio %></td>
+        <td><%= link_to 'Edit', edit_orcamento_orgao_apoio_path(orcamento_orgao_apoio) %></td>
+        <td><%= link_to 'Destroy', orcamento_orgao_apoio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Orcamento Orgao Apoio', new_orcamento_orgao_apoio_path %>

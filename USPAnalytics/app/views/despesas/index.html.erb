@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Despesas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ativo</th>
+      <th>Aposentados</th>
+      <th>Folhas avulsas</th>
+      <th>Auxilio alimentacao</th>
+      <th>Vale refeicao</th>
+      <th>Pasep</th>
+      <th>Adiatamento ferias</th>
+      <th>Decimo terceiro</th>
+      <th>Terco ferias</th>
+      <th>Precatorios</th>
+      <th>Indenizacoes pidv</th>
+      <th>Outros custeios investimentos</th>
+      <th>Reservas orcamentarias</th>
+      <th>Despesas custeadas receitas vinculadas</th>
+      <th>Ano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @despesas.each do |despesa| %>
+      <tr>
+        <td><%= despesa.ativo %></td>
+        <td><%= despesa.aposentados %></td>
+        <td><%= despesa.folhas_avulsas %></td>
+        <td><%= despesa.auxilio_alimentacao %></td>
+        <td><%= despesa.vale_refeicao %></td>
+        <td><%= despesa.pasep %></td>
+        <td><%= despesa.adiatamento_ferias %></td>
+        <td><%= despesa.decimo_terceiro %></td>
+        <td><%= despesa.terco_ferias %></td>
+        <td><%= despesa.precatorios %></td>
+        <td><%= despesa.indenizacoes_pidv %></td>
+        <td><%= despesa.outros_custeios_investimentos %></td>
+        <td><%= despesa.reservas_orcamentarias %></td>
+        <td><%= despesa.despesas_custeadas_receitas_vinculadas %></td>
+        <td><%= despesa.ano %></td>
+        <td><%= link_to 'Show', despesa %></td>
+        <td><%= link_to 'Edit', edit_despesa_path(despesa) %></td>
+        <td><%= link_to 'Destroy', despesa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Despesa', new_despesa_path %>

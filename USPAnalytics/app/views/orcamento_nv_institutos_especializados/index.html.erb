@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orcamento Nv Institutos Especializados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Unidade</th>
+      <th>Categoria</th>
+      <th>Pessoal ativo</th>
+      <th>Pessoal inativo</th>
+      <th>Dotacao</th>
+      <th>Outros custeios investimentos dotacao basica adicionais</th>
+      <th>Outros custeios investimentos utilidade publica</th>
+      <th>Ano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orcamento_nv_institutos_especializados.each do |orcamento_nv_institutos_especializado| %>
+      <tr>
+        <td><%= orcamento_nv_institutos_especializado.unidade %></td>
+        <td><%= orcamento_nv_institutos_especializado.categoria %></td>
+        <td><%= orcamento_nv_institutos_especializado.pessoal_ativo %></td>
+        <td><%= orcamento_nv_institutos_especializado.pessoal_inativo %></td>
+        <td><%= orcamento_nv_institutos_especializado.dotacao %></td>
+        <td><%= orcamento_nv_institutos_especializado.outros_custeios_investimentos_dotacao_basica_adicionais %></td>
+        <td><%= orcamento_nv_institutos_especializado.outros_custeios_investimentos_utilidade_publica %></td>
+        <td><%= orcamento_nv_institutos_especializado.ano %></td>
+        <td><%= link_to 'Show', orcamento_nv_institutos_especializado %></td>
+        <td><%= link_to 'Edit', edit_orcamento_nv_institutos_especializado_path(orcamento_nv_institutos_especializado) %></td>
+        <td><%= link_to 'Destroy', orcamento_nv_institutos_especializado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Orcamento Nv Institutos Especializado', new_orcamento_nv_institutos_especializado_path %>

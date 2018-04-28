@@ -1,0 +1,2 @@
+class OrcamentoNvInstitutosEspecializado < ApplicationRecord
+end

@@ -1,0 +1,52 @@
+<%= form_with(model: orcamento_orgao_servico, local: true) do |form| %>
+  <% if orcamento_orgao_servico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(orcamento_orgao_servico.errors.count, "error") %> prohibited this orcamento_orgao_servico from being saved:</h2>
+
+      <ul>
+      <% orcamento_orgao_servico.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :orgao_servico %>
+    <%= form.text_field :orgao_servico, id: :orcamento_orgao_servico_orgao_servico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoal_ativo %>
+    <%= form.text_field :pessoal_ativo, id: :orcamento_orgao_servico_pessoal_ativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoal_inativo %>
+    <%= form.text_field :pessoal_inativo, id: :orcamento_orgao_servico_pessoal_inativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dotacao %>
+    <%= form.text_field :dotacao, id: :orcamento_orgao_servico_dotacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros_custeios_investimentos_dotacao_basica_adicionais %>
+    <%= form.text_field :outros_custeios_investimentos_dotacao_basica_adicionais, id: :orcamento_orgao_servico_outros_custeios_investimentos_dotacao_basica_adicionais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros_custeios_investimentos_utilidade_publica %>
+    <%= form.text_field :outros_custeios_investimentos_utilidade_publica, id: :orcamento_orgao_servico_outros_custeios_investimentos_utilidade_publica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano, id: :orcamento_orgao_servico_ano %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

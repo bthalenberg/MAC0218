@@ -1,0 +1,92 @@
+<%= form_with(model: despesa, local: true) do |form| %>
+  <% if despesa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(despesa.errors.count, "error") %> prohibited this despesa from being saved:</h2>
+
+      <ul>
+      <% despesa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ativo %>
+    <%= form.text_field :ativo, id: :despesa_ativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aposentados %>
+    <%= form.text_field :aposentados, id: :despesa_aposentados %>
+  </div>
+
+  <div class="field">
+    <%= form.label :folhas_avulsas %>
+    <%= form.text_field :folhas_avulsas, id: :despesa_folhas_avulsas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :auxilio_alimentacao %>
+    <%= form.text_field :auxilio_alimentacao, id: :despesa_auxilio_alimentacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vale_refeicao %>
+    <%= form.text_field :vale_refeicao, id: :despesa_vale_refeicao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pasep %>
+    <%= form.text_field :pasep, id: :despesa_pasep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adiatamento_ferias %>
+    <%= form.text_field :adiatamento_ferias, id: :despesa_adiatamento_ferias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :decimo_terceiro %>
+    <%= form.text_field :decimo_terceiro, id: :despesa_decimo_terceiro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :terco_ferias %>
+    <%= form.text_field :terco_ferias, id: :despesa_terco_ferias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precatorios %>
+    <%= form.text_field :precatorios, id: :despesa_precatorios %>
+  </div>
+
+  <div class="field">
+    <%= form.label :indenizacoes_pidv %>
+    <%= form.text_field :indenizacoes_pidv, id: :despesa_indenizacoes_pidv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros_custeios_investimentos %>
+    <%= form.text_field :outros_custeios_investimentos, id: :despesa_outros_custeios_investimentos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reservas_orcamentarias %>
+    <%= form.text_field :reservas_orcamentarias, id: :despesa_reservas_orcamentarias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :despesas_custeadas_receitas_vinculadas %>
+    <%= form.text_field :despesas_custeadas_receitas_vinculadas, id: :despesa_despesas_custeadas_receitas_vinculadas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano, id: :despesa_ano %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

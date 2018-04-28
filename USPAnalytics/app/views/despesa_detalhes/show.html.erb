@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Alinea:</strong>
+  <%= @despesa_detalhe.alinea %>
+</p>
+
+<p>
+  <strong>Grupo:</strong>
+  <%= @despesa_detalhe.grupo %>
+</p>
+
+<p>
+  <strong>Proposta orcamentaria:</strong>
+  <%= @despesa_detalhe.proposta_orcamentaria %>
+</p>
+
+<p>
+  <strong>Participacao:</strong>
+  <%= @despesa_detalhe.participacao %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @despesa_detalhe.ano %>
+</p>
+
+<%= link_to 'Edit', edit_despesa_detalhe_path(@despesa_detalhe) %> |
+<%= link_to 'Back', despesa_detalhes_path %>

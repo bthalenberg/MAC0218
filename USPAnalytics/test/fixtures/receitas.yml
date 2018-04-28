@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  receita_tesouro_estado: 
+  receita_propria_nao_vinculada: 
+  rendimento_aplicacoes: 
+  reembolsos: 
+  outras_receitas: 
+  receitas_vinculadas: 
+  ano: 
+
+two:
+  receita_tesouro_estado: 
+  receita_propria_nao_vinculada: 
+  rendimento_aplicacoes: 
+  reembolsos: 
+  outras_receitas: 
+  receitas_vinculadas: 
+  ano: 

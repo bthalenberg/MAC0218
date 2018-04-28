@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Despesa Detalhes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Alinea</th>
+      <th>Grupo</th>
+      <th>Proposta orcamentaria</th>
+      <th>Participacao</th>
+      <th>Ano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @despesa_detalhes.each do |despesa_detalhe| %>
+      <tr>
+        <td><%= despesa_detalhe.alinea %></td>
+        <td><%= despesa_detalhe.grupo %></td>
+        <td><%= despesa_detalhe.proposta_orcamentaria %></td>
+        <td><%= despesa_detalhe.participacao %></td>
+        <td><%= despesa_detalhe.ano %></td>
+        <td><%= link_to 'Show', despesa_detalhe %></td>
+        <td><%= link_to 'Edit', edit_despesa_detalhe_path(despesa_detalhe) %></td>
+        <td><%= link_to 'Destroy', despesa_detalhe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Despesa Detalhe', new_despesa_detalhe_path %>

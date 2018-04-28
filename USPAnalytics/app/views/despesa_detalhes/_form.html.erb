@@ -1,0 +1,42 @@
+<%= form_with(model: despesa_detalhe, local: true) do |form| %>
+  <% if despesa_detalhe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(despesa_detalhe.errors.count, "error") %> prohibited this despesa_detalhe from being saved:</h2>
+
+      <ul>
+      <% despesa_detalhe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :alinea %>
+    <%= form.text_field :alinea, id: :despesa_detalhe_alinea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grupo %>
+    <%= form.text_field :grupo, id: :despesa_detalhe_grupo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :proposta_orcamentaria %>
+    <%= form.text_field :proposta_orcamentaria, id: :despesa_detalhe_proposta_orcamentaria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :participacao %>
+    <%= form.text_field :participacao, id: :despesa_detalhe_participacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano, id: :despesa_detalhe_ano %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orcamento Nv Unidade Ensino Pesquisas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Unidade ensino pesquisa</th>
+      <th>Pessoal ativo</th>
+      <th>Pessoal inativo</th>
+      <th>Dotacao</th>
+      <th>Outros custeios investimentos dotacao basica adicionais</th>
+      <th>Outros custeios investimentos utilidade publica</th>
+      <th>Ano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orcamento_nv_unidade_ensino_pesquisas.each do |orcamento_nv_unidade_ensino_pesquisa| %>
+      <tr>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.unidade_ensino_pesquisa %></td>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.pessoal_ativo %></td>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.pessoal_inativo %></td>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.dotacao %></td>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.outros_custeios_investimentos_dotacao_basica_adicionais %></td>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.outros_custeios_investimentos_utilidade_publica %></td>
+        <td><%= orcamento_nv_unidade_ensino_pesquisa.ano %></td>
+        <td><%= link_to 'Show', orcamento_nv_unidade_ensino_pesquisa %></td>
+        <td><%= link_to 'Edit', edit_orcamento_nv_unidade_ensino_pesquisa_path(orcamento_nv_unidade_ensino_pesquisa) %></td>
+        <td><%= link_to 'Destroy', orcamento_nv_unidade_ensino_pesquisa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Orcamento Nv Unidade Ensino Pesquisa', new_orcamento_nv_unidade_ensino_pesquisa_path %>

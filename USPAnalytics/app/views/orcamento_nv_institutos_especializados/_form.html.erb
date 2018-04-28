@@ -1,0 +1,57 @@
+<%= form_with(model: orcamento_nv_institutos_especializado, local: true) do |form| %>
+  <% if orcamento_nv_institutos_especializado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(orcamento_nv_institutos_especializado.errors.count, "error") %> prohibited this orcamento_nv_institutos_especializado from being saved:</h2>
+
+      <ul>
+      <% orcamento_nv_institutos_especializado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :unidade %>
+    <%= form.text_field :unidade, id: :orcamento_nv_institutos_especializado_unidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categoria %>
+    <%= form.text_field :categoria, id: :orcamento_nv_institutos_especializado_categoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoal_ativo %>
+    <%= form.text_field :pessoal_ativo, id: :orcamento_nv_institutos_especializado_pessoal_ativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoal_inativo %>
+    <%= form.text_field :pessoal_inativo, id: :orcamento_nv_institutos_especializado_pessoal_inativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dotacao %>
+    <%= form.text_field :dotacao, id: :orcamento_nv_institutos_especializado_dotacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros_custeios_investimentos_dotacao_basica_adicionais %>
+    <%= form.text_field :outros_custeios_investimentos_dotacao_basica_adicionais, id: :orcamento_nv_institutos_especializado_outros_custeios_investimentos_dotacao_basica_adicionais %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros_custeios_investimentos_utilidade_publica %>
+    <%= form.text_field :outros_custeios_investimentos_utilidade_publica, id: :orcamento_nv_institutos_especializado_outros_custeios_investimentos_utilidade_publica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano, id: :orcamento_nv_institutos_especializado_ano %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
