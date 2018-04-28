@@ -1,0 +1,2 @@
+class OrcamentoNvAreaAtuacao < ApplicationRecord
+end

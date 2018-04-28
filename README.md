@@ -16,11 +16,19 @@ Tomaremos como referências os sites [Para onde foi o meu dinheiro?](http://para
 
 ## Como instalar e executar o projeto em ambiente de desenvolvimento
 
-_O Lucas vai escrever essa merda_
+**A instalação e execução do projeto assume que o Ruby (versão 2.4) e PostgreSQL (versão 9.6) já estão instalados na máquina.**
+
+Com os arquivos do projetos armazenados no seu computador, é necessário inicialmente instalar as dependências. Para isso, execute:
+
+> bundle install
+
+Em seguida, para iniciar o servidor local, execute:
+
+> rails server
 
 ## Como executar os testes
 
-_O Lucas vai escrever essa merda_
+TODO(@victorcolombo): escrever como rodar os testes.
 
 ## Cronograma de entregas
 
@@ -28,10 +36,7 @@ Iremos paralelizar a execução do projeto, para que cada aluno trabalhe com a s
 
 ### Entrega 1: Banco de dados
 
-A primeira entrega visa modelar o banco de dados. Os dados a serem modelados serão retirados do [orçamento da USP](http://www.usp.br/vrea/?q=node/35), e referentes aos anos de 2017 e 2018:
-
-* _O Lucas vai fazer essa parte da documentação_
-
+A primeira entrega visa modelar o banco de dados. Os dados a serem modelados serão retirados do [orçamento da USP](http://www.usp.br/vrea/?q=node/35). Os modelos podem ser encontrados [aqui](database.md).
 
 ### Entrega 2: Ruby on Rails
 
@@ -40,7 +45,7 @@ A segunda entrega visa o desenvolvimento de uma interface front-end para visuali
 
 ### Entrega 3: Análises de Dados
 
-A terceira entrega visa realizar análises mais complexas dos dados, buscando correlacionar os dados apresentados na fase dois, levantar informações relevantes e inconsistências nos dados. 
+A terceira entrega visa realizar análises mais complexas dos dados, buscando correlacionar os dados apresentados na fase dois, levantar informações relevantes e inconsistências nos dados.
 
 
 ## Critérios de avaliação

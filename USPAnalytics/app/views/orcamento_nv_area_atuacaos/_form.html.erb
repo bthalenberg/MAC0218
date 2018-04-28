@@ -1,0 +1,57 @@
+<%= form_with(model: orcamento_nv_area_atuacao, local: true) do |form| %>
+  <% if orcamento_nv_area_atuacao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(orcamento_nv_area_atuacao.errors.count, "error") %> prohibited this orcamento_nv_area_atuacao from being saved:</h2>
+
+      <ul>
+      <% orcamento_nv_area_atuacao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :area_item %>
+    <%= form.text_field :area_item, id: :orcamento_nv_area_atuacao_area_item %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoal_ativo %>
+    <%= form.text_field :pessoal_ativo, id: :orcamento_nv_area_atuacao_pessoal_ativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoal_inativo %>
+    <%= form.text_field :pessoal_inativo, id: :orcamento_nv_area_atuacao_pessoal_inativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precatorio %>
+    <%= form.text_field :precatorio, id: :orcamento_nv_area_atuacao_precatorio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outros_custeios_investimentos %>
+    <%= form.text_field :outros_custeios_investimentos, id: :orcamento_nv_area_atuacao_outros_custeios_investimentos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reservas_orcamentarias %>
+    <%= form.text_field :reservas_orcamentarias, id: :orcamento_nv_area_atuacao_reservas_orcamentarias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :proporcao %>
+    <%= form.text_field :proporcao, id: :orcamento_nv_area_atuacao_proporcao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano, id: :orcamento_nv_area_atuacao_ano %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

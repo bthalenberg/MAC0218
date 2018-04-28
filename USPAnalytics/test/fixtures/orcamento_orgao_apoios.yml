@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orgao_apoio: MyString
+  pessoal_ativo: 
+  pessoal_inativo: 
+  dotacao: 
+  outros_custeios_investimentos_dotacao_basica_adicionais: 
+  outros_custeios_investimentos_utilidade_publica: 
+  ano: 
+
+two:
+  orgao_apoio: MyString
+  pessoal_ativo: 
+  pessoal_inativo: 
+  dotacao: 
+  outros_custeios_investimentos_dotacao_basica_adicionais: 
+  outros_custeios_investimentos_utilidade_publica: 
+  ano: 

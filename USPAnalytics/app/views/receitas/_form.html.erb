@@ -1,0 +1,52 @@
+<%= form_with(model: receita, local: true) do |form| %>
+  <% if receita.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(receita.errors.count, "error") %> prohibited this receita from being saved:</h2>
+
+      <ul>
+      <% receita.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :receita_tesouro_estado %>
+    <%= form.text_field :receita_tesouro_estado, id: :receita_receita_tesouro_estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :receita_propria_nao_vinculada %>
+    <%= form.text_field :receita_propria_nao_vinculada, id: :receita_receita_propria_nao_vinculada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rendimento_aplicacoes %>
+    <%= form.text_field :rendimento_aplicacoes, id: :receita_rendimento_aplicacoes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reembolsos %>
+    <%= form.text_field :reembolsos, id: :receita_reembolsos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :outras_receitas %>
+    <%= form.text_field :outras_receitas, id: :receita_outras_receitas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :receitas_vinculadas %>
+    <%= form.text_field :receitas_vinculadas, id: :receita_receitas_vinculadas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano %>
+    <%= form.text_field :ano, id: :receita_ano %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

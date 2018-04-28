@@ -1,0 +1,2 @@
+class OrcamentoNvUnidadeEnsinoPesquisa < ApplicationRecord
+end

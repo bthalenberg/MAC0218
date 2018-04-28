@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Orcamento Nv Area Atuacaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area item</th>
+      <th>Pessoal ativo</th>
+      <th>Pessoal inativo</th>
+      <th>Precatorio</th>
+      <th>Outros custeios investimentos</th>
+      <th>Reservas orcamentarias</th>
+      <th>Proporcao</th>
+      <th>Ano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orcamento_nv_area_atuacaos.each do |orcamento_nv_area_atuacao| %>
+      <tr>
+        <td><%= orcamento_nv_area_atuacao.area_item %></td>
+        <td><%= orcamento_nv_area_atuacao.pessoal_ativo %></td>
+        <td><%= orcamento_nv_area_atuacao.pessoal_inativo %></td>
+        <td><%= orcamento_nv_area_atuacao.precatorio %></td>
+        <td><%= orcamento_nv_area_atuacao.outros_custeios_investimentos %></td>
+        <td><%= orcamento_nv_area_atuacao.reservas_orcamentarias %></td>
+        <td><%= orcamento_nv_area_atuacao.proporcao %></td>
+        <td><%= orcamento_nv_area_atuacao.ano %></td>
+        <td><%= link_to 'Show', orcamento_nv_area_atuacao %></td>
+        <td><%= link_to 'Edit', edit_orcamento_nv_area_atuacao_path(orcamento_nv_area_atuacao) %></td>
+        <td><%= link_to 'Destroy', orcamento_nv_area_atuacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Orcamento Nv Area Atuacao', new_orcamento_nv_area_atuacao_path %>

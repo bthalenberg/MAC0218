@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orgao servico:</strong>
+  <%= @orcamento_orgao_servico.orgao_servico %>
+</p>
+
+<p>
+  <strong>Pessoal ativo:</strong>
+  <%= @orcamento_orgao_servico.pessoal_ativo %>
+</p>
+
+<p>
+  <strong>Pessoal inativo:</strong>
+  <%= @orcamento_orgao_servico.pessoal_inativo %>
+</p>
+
+<p>
+  <strong>Dotacao:</strong>
+  <%= @orcamento_orgao_servico.dotacao %>
+</p>
+
+<p>
+  <strong>Outros custeios investimentos dotacao basica adicionais:</strong>
+  <%= @orcamento_orgao_servico.outros_custeios_investimentos_dotacao_basica_adicionais %>
+</p>
+
+<p>
+  <strong>Outros custeios investimentos utilidade publica:</strong>
+  <%= @orcamento_orgao_servico.outros_custeios_investimentos_utilidade_publica %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @orcamento_orgao_servico.ano %>
+</p>
+
+<%= link_to 'Edit', edit_orcamento_orgao_servico_path(@orcamento_orgao_servico) %> |
+<%= link_to 'Back', orcamento_orgao_servicos_path %>

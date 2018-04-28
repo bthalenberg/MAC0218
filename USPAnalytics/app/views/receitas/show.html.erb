@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Receita tesouro estado:</strong>
+  <%= @receita.receita_tesouro_estado %>
+</p>
+
+<p>
+  <strong>Receita propria nao vinculada:</strong>
+  <%= @receita.receita_propria_nao_vinculada %>
+</p>
+
+<p>
+  <strong>Rendimento aplicacoes:</strong>
+  <%= @receita.rendimento_aplicacoes %>
+</p>
+
+<p>
+  <strong>Reembolsos:</strong>
+  <%= @receita.reembolsos %>
+</p>
+
+<p>
+  <strong>Outras receitas:</strong>
+  <%= @receita.outras_receitas %>
+</p>
+
+<p>
+  <strong>Receitas vinculadas:</strong>
+  <%= @receita.receitas_vinculadas %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @receita.ano %>
+</p>
+
+<%= link_to 'Edit', edit_receita_path(@receita) %> |
+<%= link_to 'Back', receitas_path %>

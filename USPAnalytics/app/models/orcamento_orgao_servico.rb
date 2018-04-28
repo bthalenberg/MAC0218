@@ -1,0 +1,2 @@
+class OrcamentoOrgaoServico < ApplicationRecord
+end

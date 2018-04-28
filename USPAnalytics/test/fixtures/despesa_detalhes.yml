@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alinea: MyString
+  grupo: MyString
+  proposta_orcamentaria: 
+  participacao: 9.99
+  ano: 
+
+two:
+  alinea: MyString
+  grupo: MyString
+  proposta_orcamentaria: 
+  participacao: 9.99
+  ano: 

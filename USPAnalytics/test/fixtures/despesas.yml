@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ativo: 
+  aposentados: 
+  folhas_avulsas: 
+  auxilio_alimentacao: 
+  vale_refeicao: 
+  pasep: 
+  adiatamento_ferias: 
+  decimo_terceiro: 
+  terco_ferias: 
+  precatorios: 
+  indenizacoes_pidv: 
+  outros_custeios_investimentos: 
+  reservas_orcamentarias: 
+  despesas_custeadas_receitas_vinculadas: 
+  ano: 
+
+two:
+  ativo: 
+  aposentados: 
+  folhas_avulsas: 
+  auxilio_alimentacao: 
+  vale_refeicao: 
+  pasep: 
+  adiatamento_ferias: 
+  decimo_terceiro: 
+  terco_ferias: 
+  precatorios: 
+  indenizacoes_pidv: 
+  outros_custeios_investimentos: 
+  reservas_orcamentarias: 
+  despesas_custeadas_receitas_vinculadas: 
+  ano: 
