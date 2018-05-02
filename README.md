@@ -46,11 +46,3 @@ A segunda entrega visa o desenvolvimento de uma interface front-end para visuali
 ### Entrega 3: Análises de Dados
 
 A terceira entrega visa realizar análises mais complexas dos dados, buscando correlacionar os dados apresentados na fase dois, levantar informações relevantes e inconsistências nos dados.
-
-
-## Critérios de avaliação
-* Organização do Repositório e Planejamento do Projeto
-* Documentação e facilidade de instalação/execução do projeto
-* Funcionalidades desenvolvidas na entrega
-* Testes
-* Qualidade do código e boas práticas
