@@ -24,8 +24,10 @@ Com os arquivos do projetos armazenados no seu computador, é necessário inicia
 
 Na sequência, execute:
 
-> bundle exec rake db:create
-> bundle exec rake db:migrate
+```
+bundle exec rake db:create
+bundle exec rake db:migrate
+```
 
 Por fim, para iniciar o servidor local, execute:
 
