@@ -31,9 +31,9 @@ Por fim, para iniciar o servidor local, execute:
 
 > rails server
 
-É possível que você precise criar um usuário para o PostgreSQL caso ainda não tenha sido configurado anteriormente. Neste caso, você irá se deparar com o seguinte erro: "FATAL: role <user> does not exist" ao abrir o servidor. Execute 
+É possível que você precise criar um usuário para o PostgreSQL caso ainda não tenha sido configurado anteriormente. Neste caso, você irá se deparar com o seguinte erro: "FATAL: role _user_ does not exist" ao abrir o servidor. Execute 
   
- > sudo -u postgres createuser --superuser <user>
+ > sudo -u postgres createuser --superuser _user_
   
 e atualize o servidor.
 
