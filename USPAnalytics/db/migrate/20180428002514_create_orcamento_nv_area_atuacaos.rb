@@ -8,7 +8,7 @@ class CreateOrcamentoNvAreaAtuacaos < ActiveRecord::Migration[5.1]
       t.bigint :outros_custeios_investimentos
       t.bigint :reservas_orcamentarias
       t.decimal :proporcao
-      t.smallint :ano
+      t.integer :anono
 
       t.timestamps
     end

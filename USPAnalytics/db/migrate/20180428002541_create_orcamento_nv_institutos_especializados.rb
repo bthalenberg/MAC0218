@@ -8,7 +8,7 @@ class CreateOrcamentoNvInstitutosEspecializados < ActiveRecord::Migration[5.1]
       t.bigint :dotacao
       t.bigint :outros_custeios_investimentos_dotacao_basica_adicionais
       t.bigint :outros_custeios_investimentos_utilidade_publica
-      t.smallint :ano
+      t.integer :ano
 
       t.timestamps
     end

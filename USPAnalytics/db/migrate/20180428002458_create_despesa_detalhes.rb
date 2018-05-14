@@ -5,7 +5,7 @@ class CreateDespesaDetalhes < ActiveRecord::Migration[5.1]
       t.string :grupo
       t.bigint :proposta_orcamentaria
       t.decimal :participacao
-      t.smallint :ano
+      t.integer :ano
 
       t.timestamps
     end

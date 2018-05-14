@@ -7,7 +7,7 @@ class CreateReceitas < ActiveRecord::Migration[5.1]
       t.bigint :reembolsos
       t.bigint :outras_receitas
       t.bigint :receitas_vinculadas
-      t.smallint :ano
+      t.integer :ano
 
       t.timestamps
     end
