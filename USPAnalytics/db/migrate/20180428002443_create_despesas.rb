@@ -15,7 +15,7 @@ class CreateDespesas < ActiveRecord::Migration[5.1]
       t.bigint :outros_custeios_investimentos
       t.bigint :reservas_orcamentarias
       t.bigint :despesas_custeadas_receitas_vinculadas
-      t.smallint :ano
+      t.integer :ano
 
       t.timestamps
     end
