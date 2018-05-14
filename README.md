@@ -22,9 +22,23 @@ Com os arquivos do projetos armazenados no seu computador, é necessário inicia
 
 > bundle install
 
-Em seguida, para iniciar o servidor local, execute:
+Na sequência, execute:
+
+```
+bundle exec rake db:create
+bundle exec rake db:migrate
+```
+
+Por fim, para iniciar o servidor local, execute:
 
 > rails server
+
+É possível que você precise criar um usuário para o PostgreSQL caso ainda não tenha sido configurado anteriormente. Neste caso, você irá se deparar com o seguinte erro: "FATAL: role _user_ does not exist" ao abrir o servidor. Execute 
+  
+ > sudo -u postgres createuser --superuser _user_
+  
+e atualize o servidor.
+
 
 ## Como executar os testes
 
