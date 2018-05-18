@@ -16,7 +16,7 @@ Tomaremos como referências os sites [Para onde foi o meu dinheiro?](http://para
 
 ## Como instalar e executar o projeto em ambiente de desenvolvimento
 
-**A instalação e execução do projeto assume que o Ruby (versão 2.4) e PostgreSQL (versão 9.6) já estão instalados na máquina.**
+**A instalação e execução do projeto assume que o Ruby (versão 2.4) já está instalado na máquina.**
 
 Com os arquivos do projetos armazenados no seu computador, é necessário inicialmente instalar as dependências. Para isso, execute:
 
@@ -31,13 +31,7 @@ bundle exec rake db:migrate
 
 Por fim, para iniciar o servidor local, execute:
 
-> rails server
-
-É possível que você precise criar um usuário para o PostgreSQL caso ainda não tenha sido configurado anteriormente. Neste caso, você irá se deparar com o seguinte erro: "FATAL: role _user_ does not exist" ao abrir o servidor. Execute 
-  
- > sudo -u postgres createuser --superuser _user_
-  
-e atualize o servidor.
+> rails serve
 
 
 ## Como executar os testes
