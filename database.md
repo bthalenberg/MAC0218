@@ -143,23 +143,24 @@ rails g scaffold OrcamentoOrgaoServico \
 
 ## Glossário
 
-* **Receitas não vinculadas:** XXX. Podem ser tanto advindas do Tesouro do Estado (porcentagem do ICMS repassada à USP), quanto próprias.
-* **Receitas vinculadas:**
+* **Receitas vinculadas:** São receitas cuja utilização está pré-definida pela Lei Orçamentária estadual. Referem-se a recursos oriundos da prestação de serviços/SUS, vendas, taxas das Unidades, etc, e dos recursos vinculados federais.
+* **Receitas não vinculadas:** São receitas cuja utilização não está pré-definida. Podem ser tanto advindas do Tesouro do Estado (porcentagem do ICMS repassada à USP), quanto próprias.
 * **Pessoal e reflexos:** essa categoria engloba os custos da folha de pagamento (de servidores ativos e inativos), outras folhas (que por sua vez engloba os precatórios) e provisões.
-* **Precatórios:**
+* **Precatórios:** requisições de pagamento expedidas pelo Judiciário para cobrar da USP, como autarquia, o pagamento de valores devidos após condenação judicial definitiva. São como indenizações.
 * **Outros custeios:** categoria guarda-chuva que engloba todos os gastos que não são com pessoal ou reservas orçamentárias. Exemplos de custos nessa categoria são a dotação básica de unidades de ensino e pesquisa e de órgãos de apoio, o programa de bolsas e auxílios da política de apoio à permanência e formação estudantil, projetos de cultura e extensão, entre outros.
 * **Reservas orçamentárias:** inclui a reserva de contingência e a reserva patrimonial de contingência.
 * **Indenização PIDV:** O PIDV foi o Programa de Incentivo à Demissão Voluntária, que vem sendo posto em prática desde 2015 como medida para aliviar a crise financeira. Esses custos são referentes aos encargos trabalhistas que devem ser pagos no momento da demissão de um funcionário.
-* **Institutos especializados:**
+* **Institutos especializados:** são centros de pesquisa especializados -- CEBIMAR, CENA, IEA, IEB, IEE e IMT. 
 * **Projetos especiais:** custos de projetos de gradução, pós-graduação, pesquisa, cultura e extensão e reitoria, gerenciados pelas pró-reitorias. Não é claro que projetos são esses.
 * **Reservas específicas:** destinadas à cobertura de sinistros.
 * **Atividades integradas:** custos de avaliação institucional, assistência médica e odontológica, material bibliográfico, cooperação acadêmica nacional e internacional, obras, biotérios, programa integrado de segurança, informática, restaurantes universitários, creches, serviços de utilidade pública, sistema de frota de veículos, renovação da frota de veículos especiais, taxas municipais, escola técnica e gestão da USP, reservas ecológicas e taxas para proteção à propriedade intelectual.
 * **Órgãos de apoio:** englobam a SCS e a Reitoria e seus subórgãos: GR/GVR, CERT, PG, SG, CODAGE, DA, DF, DRH, SAUSP, Saúde Ocupacional, Escola Técnica e de Gestão, Agência USP de Cooperação Acadêmica Nacional e Internacional, Agência USP Inovação, CDI, Espaço Brasiliana, InovaUSP, Departamento de Assistência à Saúde e Superintendência de Segurança.
 * **Órgãos de serviço:** são CEPEUSP, EDUSP, SAS, SEF, SIBI, STI e as prefeituras dos campi: PUSP-B, PUSP-C, PUSP-CL, PUSP-FC, PUSP-L, PUSP-LQ, PUSP-QSD, PUSP-RP, PUSP-SC. 
-* **Dotação básica:** custos de unidades de ensino, institutos especializados, museus, hospitais e anexos, órgãos de apoio, órgãos de serviço e prefeituras.
+* **Dotação básica:** custos de unidades de ensino, institutos especializados, museus, hospitais e anexos, órgãos de apoio, órgãos de serviço e prefeituras. Seu objetivo é cobrir grande parte das despesas de custeio das Unidades de Ensino e Pesquisa da USP e, portanto, viabilizar a operação dessas Unidades. 
 * **Adicionais:** custos com treinamento de recursos humanos; manutenção predial, de áreas externas e de sistema viário; equipamentos de segurança; manutenção e reposição de equipamentos de informática; serviços de limpeza e vigilância; despesas com transporte e aluguel de imóveis.
-* **Utilidade pública:**
-* **Dotação:**
+* **Utilidade pública:** despesas com o pagamento do consumo de energia elétrica, água e utilização da rede de efluentes, e
+telecomunicações.
+* **Dotação:** verba total recebida por um órgão. Normalmente, é a soma do orçamento destinado a pessoal e da dotação básica.
 
 ## Siglas
 ### Unidades de Ensino e Pesquisa:
