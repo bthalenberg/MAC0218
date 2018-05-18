@@ -42,7 +42,19 @@ e atualize o servidor.
 
 ## Como executar os testes
 
-TODO(@victorcolombo): escrever como rodar os testes.
+Para executar todos os testes, execute:
+
+```
+rake test
+```
+
+Para executar apenas conjunto de testes, execute um dos seguintes:
+
+```
+rake test:models
+rake test:controllers
+rake test:integration
+```
 
 ## Cronograma de entregas
 
