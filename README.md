@@ -56,20 +56,3 @@ rake test:models
 rake test:controllers
 rake test:integration
 ```
-
-## Cronograma de entregas
-
-Iremos paralelizar a execução do projeto, para que cada aluno trabalhe com a seção que mais lhe interessa. Para isso, o projeto será dividido em branches, e as entregas são referentes ao que deve estar presente na branch master. Uma dupla de alunos será responsável por liderar a equipe durante a execução de cada entrega.
-
-### Entrega 1: Banco de dados
-
-A primeira entrega visa modelar o banco de dados. Os dados a serem modelados serão retirados do [orçamento da USP](http://www.usp.br/vrea/?q=node/35). Os modelos podem ser encontrados [aqui](database.md).
-
-### Entrega 2: Ruby on Rails
-
-A segunda entrega visa o desenvolvimento de uma interface front-end para visualização da informação. Tecnicamente, iremos integrar algumas ferramentas de geração de gráficos e elementos de interface com o banco de dados.
-
-
-### Entrega 3: Análises de Dados
-
-A terceira entrega visa realizar análises mais complexas dos dados, buscando correlacionar os dados apresentados na fase dois, levantar informações relevantes e inconsistências nos dados.
