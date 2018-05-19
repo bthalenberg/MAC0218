@@ -16,11 +16,14 @@ Tomaremos como referências os sites [Para onde foi o meu dinheiro?](http://para
 
 ## Como instalar e executar o projeto em ambiente de desenvolvimento
 
-**A instalação e execução do projeto assume que o Ruby (versão 2.4) já está instalado na máquina.**
+**A instalação e execução do projeto assume que o Ruby (versão 2.4 ou superior) já está instalado e o PostgreSQL já está configurado na máquina.**
 
 Com os arquivos do projetos armazenados no seu computador, é necessário inicialmente instalar as dependências. Para isso, execute:
 
-> bundle install
+```
+cd USPAnalytics
+bundle install
+```
 
 Na sequência, execute:
 
@@ -31,7 +34,11 @@ bundle exec rake db:migrate
 
 Por fim, para iniciar o servidor local, execute:
 
-> rails serve
+```
+rails server
+```
+
+No seu navegador, visite o [servidor local](localhost:3000) para acessar a aplicação.
 
 
 ## Como executar os testes
