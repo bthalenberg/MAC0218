@@ -38,7 +38,7 @@ Por fim, para iniciar o servidor local, execute:
 rails server
 ```
 
-No seu navegador, visite o [servidor local](localhost:3000) para acessar a aplicação.
+No seu navegador, visite ```localhost:3000``` para acessar a aplicação.
 
 
 ## Como executar os testes
