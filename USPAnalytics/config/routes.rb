@@ -8,4 +8,21 @@ Rails.application.routes.draw do
   resources :despesas
   resources :receitas
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root 'pages#landing_page'
+
+  get '/landing_page', to: 'pages#landing_page'
+  get '/about', to: 'pages#about'
+  get '/contact', to: 'pages#contact'
+  get '/browse_institute', to: 'pages#browse_institute'
+  get '/browse_institute_analysis', to: 'pages#browse_institute_analysis'
+  get '/browse_institute_raw_data', to: 'pages#browse_institute_raw_data'
+  get '/browse_topic', to: 'pages#browse_topic'
+  get '/browse_topic_analysis', to: 'pages#browse_topic_analysis'
+  get '/browse_topic_annual_data', to: 'pages#browse_topic_annual_data'
+  get '/browse_topic_raw_data', to: 'pages#browse_topic_raw_data'
+  get '/search', to: 'pages#search'
+  get '/search_analysis', to: 'pages#search_analysis'
+  get '/search_results', to: 'pages#search_results'
+  get '/search_raw_data', to: 'pages#search_raw_data'
 end
