@@ -9,6 +9,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <h1><%= @title %></h1>
+    <hr />
+    <% unless @back.nil? %>
+      <p>Go <%= link_to "back", controller: 'pages', action: @back %>.</p>
+    <% end %>
+    <p>Menu:
+      <ol>
+        <% @next.each do |n| %>
+          <li><%= link_to n[:name], controller: 'pages', action: n[:action] %></li>
+        <% end %>
+      </ol>
+    </p>
   </body>
 </html>
