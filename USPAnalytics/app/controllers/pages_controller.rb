@@ -46,7 +46,7 @@ class PagesController < ApplicationController
     @next = []
   end
 
-  def Analysis
+  def analysis
     @title = "Analysis"
     @back = 'landing_page'
     @next = []
