@@ -1,37 +1,9 @@
 class PagesController < ApplicationController
 
   def landing_page
-    @title = "Landing Page"
-    @back = nil
-    @next = [
-      {
-        name: 'About',
-        action: 'about'
-      },
-      {
-        name: 'Data',
-        action: 'data'
-      },
-      {
-        name: 'Analysis',
-        action: 'analysis'
-      },
-      {
-        name: 'Glossary',
-        action: 'glossary'
-      }
-    ]
   end
 
   def about
-    @title = "About"
-    @back = 'landing_page'
-    @next = [
-      {
-        name: 'Contact',
-        action: 'contact'
-      }
-    ]
   end
 
   def contact
