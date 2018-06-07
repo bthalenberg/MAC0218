@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   get '/landing_page', to: 'pages#landing_page'
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
-<<<<<<< HEAD
   get '/browse', to: 'pages#browse'
   get '/browse_institute', to: 'pages#browse_institute'
   get '/browse_institute_analysis', to: 'pages#browse_institute_analysis'
@@ -23,10 +22,6 @@ Rails.application.routes.draw do
   get '/browse_topic_analysis', to: 'pages#browse_topic_analysis'
   get '/browse_topic_annual_data', to: 'pages#browse_topic_annual_data'
   get '/browse_topic_raw_data', to: 'pages#browse_topic_raw_data'
-=======
-  get '/data', to: 'pages#data'
-  get '/analysis', to: 'pages#analysis'
-  get '/glossary', to: 'pages#glossary'
->>>>>>> master
   get '/search', to: 'pages#search'
+  get '/glossary', to: 'pages#glossary'
 end
