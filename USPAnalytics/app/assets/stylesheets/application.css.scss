@@ -230,3 +230,27 @@ only screen and (                min-resolution: 2dppx) {
 	background-size: cover;
 	background-position: center;
 }
+
+.main-container {
+	margin: 0 15%;
+	width: auto;
+	padding-bottom: 20px;
+}
+
+.main-container h2 {
+	text-align: left;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+.main-container .main-img {
+	width: 70%;
+	margin: 0 auto 20px;
+}
+
+.main-container p {
+	text-align: left;
+	font-size: 15px;
+	color: #666;
+}
