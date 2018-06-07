@@ -9,7 +9,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-<<<<<<< HEAD
   def browse
   end
 
@@ -26,12 +25,6 @@ class PagesController < ApplicationController
         action: 'browse_institute_analysis'
       }
     ]
-=======
-  def data
->>>>>>> master
-  end
-
-  def analysis
   end
 
   def search
