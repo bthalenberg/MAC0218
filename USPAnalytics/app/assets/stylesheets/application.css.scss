@@ -254,3 +254,31 @@ only screen and (                min-resolution: 2dppx) {
 	font-size: 15px;
 	color: #666;
 }
+
+.main-container .subtitle {
+	text-align: center;
+	font-size: 17px;
+	font-style: italic;
+	color: #70798c;
+	margin-bottom: 20px;
+}
+
+.main-container ul {
+	margin-top: 30px;
+}
+
+.main-container li {
+	text-align: left;
+	font-size: 18px;
+	color: #777;
+	margin-bottom: 15px;
+}
+
+.main-container .fa-ul .fa-li .fa {
+	position: relative;
+	top: -3px;
+}
+
+.blue {
+	color: #70798c;
+}
