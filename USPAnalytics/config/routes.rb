@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/landing_page', to: 'pages#landing_page'
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
+  get '/browse', to: 'pages#browse'
   get '/browse_institute', to: 'pages#browse_institute'
   get '/browse_institute_analysis', to: 'pages#browse_institute_analysis'
   get '/browse_institute_raw_data', to: 'pages#browse_institute_raw_data'
