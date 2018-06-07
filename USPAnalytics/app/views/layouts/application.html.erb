@@ -4,11 +4,58 @@
     <title>USPAnalytics</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+<<<<<<< HEAD
+
+  	<!-- Top menu -->
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header wow fadeIn">
+          <a href="index.html" class="logo-brand">
+            <%= image_tag('logo.png', class: "logo-img") %>
+					  Analytics
+          </a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right navbar-search-button">
+						<li><a class="search-button" href="#"><i class="fa fa-search"></i></a></li>
+					</ul>
+					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
+						<div class="form-group">
+							<input type="text" name="search" placeholder="Search..." class="search form-control">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+						<li><%= link_to "Home", root_path %></li>
+						<li><%= link_to "O Projeto", about_path %></li>
+						<li><%= link_to "Os dados", browse_path %></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <%= yield %>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 footer-copyright">
+            &copy; <a href="https://github.com/bthalenberg/MAC0218/">USP<strong>Analytics</strong></a> | Bootstrap by <a href="http://azmind.com">AZMIND</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+=======
   	<%= yield %>
+>>>>>>> master
   </body>
 </html>
