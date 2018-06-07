@@ -279,6 +279,38 @@ only screen and (                min-resolution: 2dppx) {
 	top: -3px;
 }
 
+.data-box {
+	border: 2px solid #DDD;
+	border-radius: 12px;
+}
+
+.data-header {
+	font-size: 32px;
+	padding: 10px 10px;
+}
+
+.data-header .icon {
+	margin-right: 10px;
+}
+
+.data-item {
+	border-top: 1px solid #DDD;
+	padding: 5px 10px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 500;
+	color: #444;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #EEE;
+	}
+}
+
 .blue {
 	color: #70798c;
+}
+
+.beige {
+	color: #a99985;
 }
