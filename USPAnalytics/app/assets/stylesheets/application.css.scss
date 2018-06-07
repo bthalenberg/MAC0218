@@ -203,11 +203,6 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-	/* logo */
-    .navbar-brand {
-    	background-image: url(../img/profits.png) !important; background-repeat: no-repeat !important; background-size: 95px 34px !important;
-    }
-
 }
 
 
@@ -222,4 +217,10 @@ only screen and (                min-resolution: 2dppx) {
 	font-family: "Roboto";
 	font-weight: 500;
 	font-size: 26px;
+}
+
+.top-content {
+	background-image: image-url("intro-bg.png");
+	background-size: cover;
+	background-position: center;
 }

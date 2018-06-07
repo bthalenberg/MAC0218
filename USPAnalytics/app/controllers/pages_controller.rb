@@ -36,6 +36,9 @@ class PagesController < ApplicationController
     @next = []
   end
 
+  def browse
+  end
+
   def browse_institute
     @title = "Browse by Institute"
     @back = 'browse_topic'
