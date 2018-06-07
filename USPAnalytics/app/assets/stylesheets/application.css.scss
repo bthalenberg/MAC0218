@@ -19,6 +19,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Variables */
+@import "base/variables";
+
+/* Adding responsive design */
+@import "responsive/*";
+
 
 /* STYLE */
 
