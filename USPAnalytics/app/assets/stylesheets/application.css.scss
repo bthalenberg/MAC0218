@@ -214,6 +214,24 @@ only screen and (                min-resolution: 2dppx) {
 
 /* OUR STYLE */
 
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+footer, nav {
+	flex-shrink: 0;
+}
+
 .logo-img {
 	height: 50px;
 }
