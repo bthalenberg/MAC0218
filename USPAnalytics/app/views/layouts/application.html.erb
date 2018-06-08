@@ -13,25 +13,33 @@
 
   <body>
 
+	
+
   	<!-- Top menu -->
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container">
 				<div class="navbar-header wow fadeIn">
-          <a href="index.html" class="logo-brand">
+					<%= link_to root_path, class: "logo-brand" do %>
             <%= image_tag('logo.png', class: "logo-img") %>
 					  Analytics
-          </a>
-				</div>
+					<% end %>
+
+ 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+ 						<i class="fa fa-bars"></i>
+					</button>
+ 					<a class="navbar-brand" href="index.html">USP Analytics</a>
+ 				</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">
-					<ul class="nav navbar-nav navbar-right navbar-search-button">
+					<%# <ul class="nav navbar-nav navbar-right navbar-search-button">
 						<li><a class="search-button" href="#"><i class="fa fa-search"></i></a></li>
 					</ul>
 					<form class="navbar-form navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
 						<div class="form-group">
 							<input type="text" name="search" placeholder="Search..." class="search form-control">
 						</div>
-					</form>
+					</form> %>
 					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
 						<li><%= link_to "Home", root_path %></li>
 						<li><%= link_to "O Projeto", about_path %></li>
@@ -42,8 +50,9 @@
 			</div>
 		</nav>
 
-    <%= yield %>
-
+		<main>
+    	<%= yield %>
+		</main>
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -54,5 +63,12 @@
         </div>
       </div>
     </footer>
+		<script>
+			$(function() {
+				$('.navbar-toggle').click(function() {
+					$('.navbar-collapse').slideToggle();
+				});
+			});
+		</script>
   </body>
 </html>
