@@ -17,10 +17,10 @@
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container">
 				<div class="navbar-header wow fadeIn">
-          <a href="index.html" class="logo-brand">
+					<%= link_to root_path, class: "logo-brand" do %>
             <%= image_tag('logo.png', class: "logo-img") %>
 					  Analytics
-          </a>
+					<% end %>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="top-navbar-1">

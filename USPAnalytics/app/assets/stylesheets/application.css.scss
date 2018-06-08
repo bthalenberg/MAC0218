@@ -148,7 +148,7 @@ ul.navbar-nav { font-size: 16px; color: #fff; }
 
 /***** Footer *****/
 
-footer { padding: 0px 0 45px 0; background: #d3d3d3; }
+footer { padding: 0px 0 15px 0; background: #d3d3d3; }
 
 .footer-copyright { padding-top: 15px; }
 .footer-copyright a { color: #888; border-bottom: 1px dotted #888; }
@@ -250,7 +250,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .main-container p {
-	text-align: left;
+	text-align: justify;
 	font-size: 15px;
 	color: #666;
 }
@@ -268,7 +268,8 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .main-container li {
-	text-align: left;
+	text-align: justify;
+	line-height: 1.3;
 	font-size: 18px;
 	color: #777;
 	margin-bottom: 15px;
