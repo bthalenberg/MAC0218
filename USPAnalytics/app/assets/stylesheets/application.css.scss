@@ -232,6 +232,13 @@ footer, nav {
 	flex-shrink: 0;
 }
 
+.navbar-toggle {
+	border: none;
+	font-size: 22px;
+	color: white;
+	margin: 0 10px;
+}
+
 .logo-img {
 	height: 50px;
 }
@@ -253,6 +260,10 @@ footer, nav {
 	margin: 0 15%;
 	width: auto;
 	padding-bottom: 20px;
+
+	@media (max-width: 750px) {
+		margin: 0 10px;
+	}
 }
 
 .main-container h2 {
