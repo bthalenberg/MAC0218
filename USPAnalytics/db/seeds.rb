@@ -93,7 +93,7 @@ tabelaD = [
 	["Aluguel imóveis", 									  grupo2d, "Adicionais",		2874.08, 	 0.05],
 	#### GRUPO 2.3
 	["Política De Apoio À Permanência E Formação Estudantil", grupo2d, nil, 			73380, 1.37],
-	["Programa de Bolsas e Auxílios", 						  grupo2d, tabelaD[24], 	73380, 1.37],
+	["Programa de Bolsas e Auxílios", 						  grupo2d, "Política De Apoio À Permanência E Formação Estudantil", 	73380, 1.37],
 	#### GRUPO 2.4
 	["Programa de Gestão Ambiental", grupo2d, nil, 1000, 0.02],
 	#### GRUPO 2.5
