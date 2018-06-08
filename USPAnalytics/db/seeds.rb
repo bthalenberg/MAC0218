@@ -9,7 +9,7 @@
 #
 #    Alínea: Unidades de ensino
 #    Grupo: Outros custeios e investimentos - Dotação básica
-#  	 parent: nil
+#  	 parent: "nil"
 #    Proposta orçamentária: 56455
 #    Participação: 1,05%
 #    Ano: 2018
@@ -50,7 +50,7 @@ grupo1c = "Despesas Com Recursos Do Tesouro e Recursos Próprios Não Vinculados
 grupo2c = "Despesas Custeadas Com Receitas Vinculadas"
 tabelaC=[
 	["Pessoal", 						  grupo1c, nil, 		4639182, 	nil],	
-	["Precatórios" , 					  grupo1c, nil,  15239, 		nil],
+	["Precatórios" , 					  grupo1c, nil,  15239, nil],
 	["Precatórios" , 					  grupo1c, "Pessoal",  15239, 		nil],
 	["Indenizações PIDV", 				  grupo1c, "Pessoal", 	0, 			nil],
 	["Outros Custeios e Investimentos",   grupo1c, nil, 		698495, 	nil], 
@@ -94,6 +94,7 @@ tabelaD = [
 	#### GRUPO 2.3
 	["Política De Apoio À Permanência E Formação Estudantil", grupo2d, nil, 			73380, 1.37],
 	["Programa de Bolsas e Auxílios", 						  grupo2d, "Política De Apoio À Permanência E Formação Estudantil", 	73380, 1.37],
+
 	#### GRUPO 2.4
 	["Programa de Gestão Ambiental", grupo2d, nil, 1000, 0.02],
 	#### GRUPO 2.5
@@ -114,7 +115,7 @@ tabelaD = [
 	["Obras",                                          grupo2d, "Atividades Integradas", 40540,     0.76],
 	["Biotérios",                                      grupo2d, "Atividades Integradas", 6000,      0.11],
 	["Programa Integrado de Segurança",                grupo2d, "Atividades Integradas", 6000,      0.11],
-	["Informática",                                    grupo2d, "Atividades Integradas", 20000,     0.37],
+	["Informática",                                   grupo2d, "Atividades Integradas", 20000,     0.37],
 	["Restaurantes Universitários",                    grupo2d, "Atividades Integradas", 37922,     0.71],
 	["Creches",                                        grupo2d, "Atividades Integradas", 1440,      0.03],
 	["Serviços de Utilidade Pública",                  grupo2d, "Atividades Integradas", 98094,     1.83],

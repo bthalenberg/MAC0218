@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180518195747) do
+ActiveRecord::Schema.define(version: 20180608185044) do
 
   create_table "despesa_detalhes", force: :cascade do |t|
     t.string "alinea"
     t.string "grupo"
+    t.string "parent"
     t.bigint "proposta_orcamentaria"
     t.decimal "participacao"
     t.integer "ano"
