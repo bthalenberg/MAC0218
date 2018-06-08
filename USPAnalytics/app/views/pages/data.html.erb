@@ -1,0 +1,31 @@
+<div class="container main-container">
+    <div class="row">
+            <div id="chart_div" style="min-width: 800px, min-height: 600px"></div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['treemap']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Alinea', 'Parent', 'Proposta Orçamentária'],
+          ['Todas', null, '0']
+          <% @data.each do |key, val| %>
+            <%= ",['#{key}', '#{val[0]}', #{val[1]}]".html_safe %>
+          <% end %>
+        ]);
+
+        tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+        tree.draw(data, {
+          minColor: '#009688',
+          midColor: '#f7f7f7',
+          maxColor: '#ee8100',
+          headerHeight: 15,
+          fontColor: 'black',
+          showScale: true,
+          height: 700,
+        });
+      }
+    </script>
+</div>
