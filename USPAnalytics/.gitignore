@@ -17,3 +17,9 @@
 /yarn-error.log
 
 .byebug_history
+
+# Ignore RVM and RBENV configurations.
+.ruby-version
+
+# Ignore MacOS stuff.
+.DS_Store
