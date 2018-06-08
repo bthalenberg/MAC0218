@@ -214,6 +214,31 @@ only screen and (                min-resolution: 2dppx) {
 
 /* OUR STYLE */
 
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+footer, nav {
+	flex-shrink: 0;
+}
+
+.navbar-toggle {
+	border: none;
+	font-size: 22px;
+	color: white;
+	margin: 0 10px;
+}
+
 .logo-img {
 	height: 50px;
 }
@@ -235,6 +260,10 @@ only screen and (                min-resolution: 2dppx) {
 	margin: 0 15%;
 	width: auto;
 	padding-bottom: 20px;
+
+	@media (max-width: 750px) {
+		margin: 0 10px;
+	}
 }
 
 .main-container h2 {
