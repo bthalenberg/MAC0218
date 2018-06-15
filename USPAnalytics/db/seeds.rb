@@ -1,4 +1,4 @@
-# rails g scaffold DespesaDetalhe \
+	# rails g scaffold DespesaDetalhe \
 #   alinea:string \
 #   grupo:string \
 #   proposta_orcamentaria:bigint \
@@ -66,8 +66,8 @@ grupo3d = "Reservas orçamentárias"
 tabelaD = [
 	##### GRUPO 1
 	["Folha",                grupo1d, nil,        3792150,     70.8],
-	["Ativo",                grupo1d, "Folha", 2777135.53,  51,85],
-	["Aposentados (SPPREV)", grupo1d, "Folha", 1015014.938, 18,95],
+	["Ativo",                grupo1d, "Folha", 2777135.53,  51.85],
+	["Aposentados (SPPREV)", grupo1d, "Folha", 1015014.938, 18.95],
 	["Outras folhas",        grupo1d, nil,        421201.279,  7.86],
 	["Provisões",            grupo1d, nil,        425830.247,  7.95],
 	[" Precatório",          grupo1d, nil,        15239.222,   0.28],
