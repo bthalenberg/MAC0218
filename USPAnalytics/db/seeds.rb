@@ -98,8 +98,8 @@ tabelaD = [
 	#### GRUPO 2.4
 	["Programa de Gestão Ambiental", grupo2d, nil, 1000, 0.02],
 	#### GRUPO 2.5
-	["Projetos Especiais",   grupo2d, nil,                   16886,      0.32],
-	["Graduação",            grupo2d, "Projetos Especiais", 10294,      0.19],
+	["Projetos Especiais",   grupo2d, nil,                   16886,      0,32],
+	["Graduação",            grupo2d, "Projetos Especiais", 10294,      0,19],
 	["Pós-Gradução",         grupo2d, "Projetos Especiais", 1101,       0.02],
 	["Pesquisa",             grupo2d, "Projetos Especiais", 2161,       0.04],
 	["Cultura e Extensão",   grupo2d, "Projetos Especiais", 1338,       0.02],
