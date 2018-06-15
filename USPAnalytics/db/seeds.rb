@@ -50,14 +50,14 @@ grupo1c = "Despesas Com Recursos Do Tesouro e Recursos Próprios Não Vinculados
 grupo2c = "Despesas Custeadas Com Receitas Vinculadas"
 tabelaC=[
 	["Pessoal", 						  grupo1c, nil, 		4639182, 	nil],	
-	["Precatórios" , 					  grupo1c, nil,  15239, nil],
+	["Precatórios" , 					  grupo1c, nil,  		15239, 		nil],
 	["Precatórios" , 					  grupo1c, "Pessoal",  15239, 		nil],
 	["Indenizações PIDV", 				  grupo1c, "Pessoal", 	0, 			nil],
 	["Outros Custeios e Investimentos",   grupo1c, nil, 		698495, 	nil], 
 	["Reservas Orçamentárias", 			  grupo1c, nil, 		3440, 		nil],
 	["Outros Custeios e Investimentos",   grupo2c, nil, 		10916, 		nil]
 ]
-
+totalC = 5465517 
 
 # Tabela D
 grupo1d = "Pessoal e Reflexos"
@@ -142,7 +142,7 @@ end
 
 tabelaC.each do | alinea, grupo, parent, proposta_orcamentaria, participacao|
   DespesaDetalhe.create( alinea: alinea, grupo: grupo, parent: parent, proposta_orcamentaria: proposta_orcamentaria, 
-  							participacao: participacao, ano: 2018)
+  							participacao: proposta_orcamentaria/totalC, ano: 2018)
 end
 
 tabelaD.each do | alinea, grupo, parent, proposta_orcamentaria, participacao|
