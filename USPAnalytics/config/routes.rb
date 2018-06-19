@@ -25,4 +25,5 @@ Rails.application.routes.draw do
   get '/browse_topic_raw_data', to: 'pages#browse_topic_raw_data'
   get '/search', to: 'pages#search'
   get '/glossary', to: 'pages#glossary'
+  get '/evasao', to: 'pages#evasao'
 end
