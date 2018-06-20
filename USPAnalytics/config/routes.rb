@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   get '/search', to: 'pages#search'
   get '/glossary', to: 'pages#glossary'
   get '/evasao', to: 'pages#evasao'
+  get '/poli', to: 'pages#poli'
 end
