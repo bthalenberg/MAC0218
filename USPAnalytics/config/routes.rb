@@ -28,4 +28,5 @@ Rails.application.routes.draw do
   get '/evasao', to: 'pages#evasao'
   get '/poli', to: 'pages#poli'
   get '/ime', to: 'pages#ime'
+  get '/infog', to: 'pages#info_gastos'
 end
