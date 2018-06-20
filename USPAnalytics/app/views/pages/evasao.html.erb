@@ -1,32 +1,27 @@
 <div class="container main-container">
-    <h2>Taxas de evasao da USP</h2>
+    <h2>Taxas de evasão dos institutos da USP e seu custo
+    </h2>
     <hr>
-    <p align=justify> O USP Analytics nasceu como um projeto da disciplina MAC0218 - Técnicas de Programação II,
-    Instituto de Matemática e Estatística da USP. Ao recebermos a tarefa de criar uma aplicação web utilizando
-    o <i>framework</i> <a href="https://rubyonrails.org/">Ruby on Rails</a>, decidimos criar um portal de
-    transparência da USP que, de fato, permitisse acesso fácil e intuitivo aos dados, o que não acontece no
-    site da universidade. Nosso projeto é amplamente inspirado no site <a href="http://paraondefoiomeudinheiro.org.br">
-    Para onde foi meu dinheiro?</a>, que oferece muitas das mesmas funcionalidades para orçamentos municipais.</p>
+    <p align=justify>Faremos aqui uma análise do custo per capita dos alunos dos diferentes institutos da USP, os atuais níveis de evasão e o que isso significa para a instituição.</p>
 
-    <p align=justify>Embora a USP possua um portal da transparência, sua navegação é contra-intuitiva, seguindo uma cadeia
-    de links que muitas vezes não recebem denominações claras. Além disso, os dados não são acessíveis pelo navegador,
-    uma vez que estão disponíveis apenas em planilhas para download, por vezes em formatos proprietários. </p>
+    <%= image_tag("Dados.png", :alt => "Tabela") %>  
+    <p>  </p>
+    <p>  </p>
 
-    <p align=justify> Politicamente, a importância do fácil acesso a essas informações é imensa, especialmente
-    em um ano de eleições estaduais: recentemente, temos visto diversos argumentos financeiros que buscam
-    justificar a privatização da Universidade. Além disso, programas como o PDV, plano de demissão voluntária,
-    buscam solucionar a crise orçamentária cortando gastos em áreas que não são o principal ralo do orçamento.
-    A disponibilização desses dados em uma plataforma facilmente navegável visa permitir o acesso de mais
-    pessoas a eles, fomentando o debate informado acerca da Universidade pública e gratuita. Ademais, a
-    organização mais clara desses dados poderá servir como guia para o desenvolvimento de políticas orçamentárias
-    internas à USP, por facilitar a visualização de como e onde o repasse está sendo aplicado. </p>
+    <p align=justify>Utilizando dados de um estudo realizado em 2009, temos uma visão geral do panorama orçamentário e taxas de evasão dos diversos institutos, divididos por áreas de conhecimento.</p>
 
-    <p align=justify> O projeto foi desenvolvido no segundo semestre de 2018 pelos alunos Artur Magalhães, Bruna Thalenberg,
-    Guilherme Yambanis, Gustavo Silva, Lucas Santos e Victor Colombo. Esse é um projeto <i>open-source</i> sob
-    licença <a href="https://github.com/bthalenberg/MAC0218/blob/master/LICENSE">GNU Affero</a> e todo o código
-    pode ser encontrado no <a href="https://github.com/bthalenberg/MAC0218/">repositório do GitHub</a>.
-    Contribuições são bem vindas. </p>
+    <p align=justify> Já uma primeira análise destes dados revela um fato interessante: a área de exatas possui a maior taxa de evasão, próxima de 80%, mais da metade da área de humanas e a área de biológicas possui a menor taxa de evasão, com menos de 9%. </p>
 
-    Caso deseje entrar em contato, envie um email para <a href="mailto:tecs@ime.usp.br">tecs (arroba) ime.usp.br</a>.
+    <p align=justify> Vale ainda destacar os cálculos do balanço social. Enquanto os cursos de biológicas tem um custo per capita muito superior aos cursos de exatas, seu passivo social e menos de um quarto, o que se dá pela enorme taxa de evasão das exatas.</p>
+
+    <%= image_tag("Balanco Social.png", :alt => "Balanco Social") %>  
+    <p>  </p>
+    <p>  </p>
+
+    <p align=justify> “A correlação entre os níveis de evasão (%) e o custo per capita (Ativo R$) das unidades é levemente inversamente proporcional (-0.25), indicando que as unidades mais caras tendem a apresentar menores níveis de evasão e é isso o que se pode constatar na tabela 1: a área de ciências biológica que apresentou maior custo per capita é a que possui menor índice médio ponderado de evasão (8.8%), ao contrário da área de humanas com menor custo per capita, mas com um maior índice médio ponderado de evasão (31.52%). Mas há que se atentar para área de ciências exatas, com alarmantes níveis de evasão (79.88%)” </p>   
+    <p align=justify> O valor total do Passivo social seria em torno de R$ 552.832 Milhoes. 
+
+    Ainda analisando a tabela 1, temos o fato mais impressionante de todos: a taxa de evasão da Escola Politécnica da USP, que atingiu o patamar de 142%. Isso indica que, entre alunos que desistiram e pediram transferência foi superior ao número atual de matriculados.</p>    
+
 
 </div>
