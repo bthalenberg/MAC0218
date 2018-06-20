@@ -27,4 +27,5 @@ Rails.application.routes.draw do
   get '/glossary', to: 'pages#glossary'
   get '/evasao', to: 'pages#evasao'
   get '/poli', to: 'pages#poli'
+  get '/ime', to: 'pages#ime'
 end
