@@ -29,4 +29,6 @@ Rails.application.routes.draw do
   get '/poli', to: 'pages#poli'
   get '/ime', to: 'pages#ime'
   get '/infog', to: 'pages#info_gastos'
+  get '/genero', to: 'pages#genero'
+  get '/fflch', to: 'pages#fflch'
 end
