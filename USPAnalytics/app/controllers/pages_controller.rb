@@ -10,19 +10,7 @@ class PagesController < ApplicationController
   end
 
   def data
-    @data = Hash.new
-    DespesaDetalhe.all.each do |despesa|
-      parent = nil
-      if despesa.parent == nil
-        parent = despesa.grupo
-      else
-        parent = despesa.parent
-      end
-      @data[despesa.alinea] = [parent, despesa.proposta_orcamentaria]
-      if not despesa.grupo == 'Pessoal e Reflexos'
-        @data[despesa.grupo] = ['Todas', 0]
-      end
-    end
+    @json = build_graph "Orçamento"
   end
 
   def browse
@@ -47,5 +35,32 @@ class PagesController < ApplicationController
   end
   
   def glossary
+  end
+
+  private
+  def build_graph node
+    h = Hash.new
+    attrs = get_attrs node
+    h['name'] = attrs[0]
+    children = get_children(node)
+    if children.nil?
+      h['size'] = attrs[1]
+    else
+      h['children'] = []
+      children.each do |c|
+        h['children'] << build_graph(c)
+      end
+    end
+    h
+  end
+
+  def get_attrs node
+    l = DespesaDetalhe.where(alinea: node).first
+    puts l
+    [l[:alinea].sub(/\(.*\)/, "").strip, l[:proposta_orcamentaria]]
+  end
+
+  def get_children node
+    DespesaDetalhe.where(parent: node).pluck(:alinea)
   end
 end
