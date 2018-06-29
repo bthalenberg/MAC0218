@@ -1,30 +1,77 @@
 <div class="container main-container">
-    <div class="row">
-      <%= @json %>
-      <div id="chart_div" style="min-width: 800px, min-height: 600px"></div>
-    </div>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['treemap']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-        ]);
-
-        tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
-
-        tree.draw(data, {
-          minColor: '#03758a',
-          midColor: '#f5f1ed',
-          maxColor: '#a99985',
-          headerHeight: 15,
-          fontName: 'Roboto',
-          fontColor: 'black',
-          showScale: true,
-          height: 700,
-        });
-      }
-    </script>
-    <p></p>
-    <p align="justify"><font-size="1"> Caso a visualização dos dados não carregue, tente atualizar a página.</font></p>
+    <h2>Orçamento por Área</h2>
+    <hr>
 </div>
+<svg width="1100" height="800"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var data = JSON.parse(`<%= raw(@json) %>`);
+
+console.log(data);
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+
+var fader = function(color) { return d3.interpolateRgb(color, "#fff")(0.2); },
+    color = d3.scaleOrdinal(d3.schemeCategory20.map(fader)),
+    format = d3.format(",d");
+
+var treemap = d3.treemap()
+    .tile(d3.treemapResquarify)
+    .size([width, height])
+    .round(true)
+    .paddingInner(1);
+
+var root = d3.hierarchy(data)
+    .eachBefore(function(d) { d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name; })
+    .sum(sumBySize)
+    .sort(function(a, b) { return b.height - a.height || b.value - a.value; });
+
+treemap(root);
+
+var cell = svg.selectAll("g")
+  .data(root.leaves())
+  .enter().append("g")
+    .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; });
+
+cell.append("rect")
+    .attr("id", function(d) { return d.data.id; })
+    .attr("width", function(d) { return d.x1 - d.x0; })
+    .attr("height", function(d) { return d.y1 - d.y0; })
+    .attr("fill", function(d) { return color(d.parent.data.id); });
+
+cell.append("clipPath")
+    .attr("id", function(d) { return "clip-" + d.data.id; })
+  .append("use")
+    .attr("xlink:href", function(d) { return "#" + d.data.id; });
+
+cell.append("text")
+    .attr("clip-path", function(d) { return "url(#clip-" + d.data.id + ")"; })
+  .selectAll("tspan")
+    .data(function(d) {
+      var wordarr = d.data.name.replace(/\*/g, "").replace(/\s+/g, " ").split(" ");
+      for(var i = 0; i < wordarr.length-1; i++) {
+        if(wordarr[i].length + wordarr[i+1].length < 15) {
+          wordarr[i] = wordarr[i] + ' ' + wordarr[i+1];
+          wordarr.splice(i+1, 1);
+        }
+      } 
+      wordarr.push("(R$ "+d.value+",00)");
+      return wordarr; 
+    })
+  .enter().append("tspan")
+    .attr("x", 4)
+    .attr("y", function(d, i) { return 13 + i * 17; })
+    .text(function(d) { return d; });
+
+cell.append("title")
+    .text(function(d) { return d.data.id + "\n" + format(d.value); });
+
+function sumBySize(d) {
+  return d.size;
+}
+
+</script>

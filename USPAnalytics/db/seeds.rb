@@ -14,8 +14,9 @@ File.open(File.join(directory, input_file), 'r') do |f|
     element = line
     while n_tabs <= l_tabs.last
       l_tabs.pop
+      stack.pop
     end
-    $map[element] = [stack.last, 1]
+    $map[element] = [stack.last, rand(1..1000)]
     l_tabs.push(n_tabs)
     stack.push(element)
   end

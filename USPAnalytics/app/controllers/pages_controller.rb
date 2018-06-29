@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   end
 
   def data
-    @json = build_graph "Orçamento"
+    @json = build_graph("Orçamento").to_json
   end
 
   def browse
@@ -43,7 +43,7 @@ class PagesController < ApplicationController
     attrs = get_attrs node
     h['name'] = attrs[0]
     children = get_children(node)
-    if children.nil?
+    if children.empty?
       h['size'] = attrs[1]
     else
       h['children'] = []
@@ -56,7 +56,6 @@ class PagesController < ApplicationController
 
   def get_attrs node
     l = DespesaDetalhe.where(alinea: node).first
-    puts l
     [l[:alinea].sub(/\(.*\)/, "").strip, l[:proposta_orcamentaria]]
   end
 
