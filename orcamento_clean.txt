@@ -1,0 +1,112 @@
+vinculado (tabela B:C25)
+    outros custeios (tabela C)
+não vinculado (tabela B:C6)
+    pessoal (tabela C:C9)
+        ativo (tabela D:C9)
+        aposentado (tabela D:C10)
+        outras folhas (tabela D:C11)
+        provisões (tabela D:C12)
+        precatórios (tabela D:C14)
+    precatório (tabela C:C23)
+    PIDV (tabela C:C24)
+    outros custeios (tabela C:C25)
+        reservas específicas (tabela D)
+            cobertura de sinistros (tabela D)
+        dotação (tabela D:C25)
+            unidades de ensino (tabela D:C18)
+                EACH (Q2:I6) *
+                ECA (Q2:I7) *
+                FO (Q2:I33) *
+                FOB (Q2:I39) *
+                IRI (Q2:I62) *
+            institutos especializados (tabela D:C19)
+                CEBIMAR (Q3:I8) *
+                IMT (Q3:I13) *
+            museus (tabela D:C20)
+                MAC (Q3:I17) *
+                MZ (Q3:I21) *
+            hospitais (tabela D:C21)
+                HRAC (Q3:I25) *
+                SVOI (Q3:I28) *
+            apoio (tabela D:C22)
+                reitoria (Q4:I34) *
+                    GR/GVR (Q4:I35) **
+                    CERT (Q4:...) **
+                    PG **
+                    SG **
+                    CODAGE (Q4:I39) **
+                        DA (Q4:I40) **
+                        DF (...) **
+                        DRH **
+                        SAUSP **
+                        Saúde Ocupacional **
+                        Escola Téc e de Gestão (Q4:I45) **
+                    AUSP Coop. Acadêmica Nac. e Intern. (Q4:I46) **
+                    AUSPIN (Q4:I47) **
+                    CDI (...) **
+                    Brasiliana **
+                    InovaUSP **
+                    Dept. Assistência a Saúde **
+                    superintendência de segurança **
+                    outros (Q4:I53)
+                        pessoal aposentado (Q4:D53)
+                        dotação básica (Q4:F53)
+                        utilidade pública (Q4:H53)
+                PRG (Q4:I6) **
+                PRP (Q4:I7) **
+                PRPG (Q4:I8) **
+                PRCEU (Q4:I9) **
+                    assist. cultural bauru (Q4:I10) **
+                    ... **
+                    teatro da USP (Q4:I26) **
+                SCS (Q4:I54)
+            serviço (tabela D:C23)
+                CEPE (Q5:I7) *
+                EDUSP ... *
+                SAS *
+                SEF *
+                SIBI *
+                STI (Q5:I12) *
+            prefeituras (tabela D:C24)
+                PUSP-B * (Q5:I16)
+                PUSP-C * (Q5:I17)
+                ... *
+                PUSP-SC * (Q5:I18)
+        adicionais (tabela D:C36)
+            RH (tabela D:C26)
+            manutenção predial (tabela D:C27)
+            áreas externas (tabela D:C28)
+            sistema viário (tabela D:...)
+            segurança (tabela D)
+            limpeza (tabela D:...)
+            transporte (tabela D:C34)
+            aluguel (tabela D:C35)
+        política de permanência (tabela D:C39)
+            bolsas e auxílios (tabela D:C38)
+        gestão ambiental (tabela D:C42)
+        projetos especiais (tabela D:C49)
+            graduação (tabela D:C44)
+            pós graduação (tabela D:C45)
+            pesquisa (tabela D:C46)
+            cultura e extensão (tabela D:C47)
+            reitoria (tabela D:C48)
+        atividades integradas (tabela D: C78)
+            avaliação (tabela D:C61)
+            assistência médica (tabela D:C62)
+            material bibliográfico (tabela D:...)
+            cooperação acadêmica nacional e internacional (tabela D)
+            obras (tabela D)
+            biotérios (tabela D)
+            progr. integrado de segurança (tabela D)
+            informática (tabela D)
+            restaurantes universitários (tabela D)
+            creches (tabela D)
+            serviços de utilidade pública (tabela D:C71)
+            sistema de frota de veículos (tabela D:C72)
+            renovação da frota de veículos especiais (tabela D:C73)
+            taxas municipais (tabela D:C74)
+            escola técnica e de gestão (tabela D:C75)
+            reservas ecologicas (tabela D:C76)
+            taxas para proteção à propriedade intelectual (tabela D:C77)
+    reservas (tabela D: C81)
+        de contingência (tabela D: C81)
