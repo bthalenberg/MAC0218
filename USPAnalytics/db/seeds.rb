@@ -1,4 +1,4 @@
-directory = "../"
+directory = "./"
 input_file = 'orcamento_clean.txt'
 
 DespesaDetalhe.delete_all
