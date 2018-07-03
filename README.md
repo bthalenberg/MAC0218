@@ -57,3 +57,11 @@ rake test:models
 rake test:controllers
 rake test:integration
 ```
+
+## Como fazer o deploy no Heroku
+
+Após a criação da aplicação, o deploy é feito utilizando o comando:
+
+```
+git subtree push --prefix USPAnalytics heroku master
+```
